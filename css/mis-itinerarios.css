@@ -1,0 +1,12 @@
+.btn {
+    color: black;
+    background-color: beige;
+}
+
+.btn-info:hover {
+    background-color: #fffb00;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+

@@ -1,0 +1,22 @@
+
+.itinerary-container {
+    margin-top: 50px;
+}
+
+.itinerary-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.stop-container {
+    margin-top: 20px;
+}
+
+.comment-container {
+    margin-top: 20px;
+}
+
+.stars-container {
+    margin-top: 20px;
+}

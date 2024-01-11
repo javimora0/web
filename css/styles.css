@@ -12,6 +12,10 @@ body {
     color: white !important;
 }
 
+.black {
+    color: black !important;
+}
+
 .logo {
     display: flex;
     justify-content: center;
