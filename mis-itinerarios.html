@@ -7,6 +7,8 @@
     <title>España Viajera</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mis-itinerarios.css">
 </head>
@@ -38,7 +40,7 @@
                 <div class="container-fluid d-flex justify-content-center align-items-center header">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Inicio</a>
+                            <a class="nav-link text-light" href="main.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="mis-itinerarios.html">Mis itinerarios</a>
@@ -76,33 +78,32 @@
                             <td class="text-center"><img src="https://via.placeholder.com/100" alt="Imagen 1"></td>
                             <td class="align-middle text-center">Itinerario 1</td>
                             <td class="align-middle text-center">Descubre lugares increíbles en este itinerario emocionante.</td>
-                            <td class="text-center align-middle"><a href="itinerario.html" class="btn btn-info">Información</a></td>
+                            <td class="text-center align-middle"><button id="botonInformacion" class="btn btn-info">Información</button></td>
                         </tr>
                         <tr>
                             <td class="text-center"><img src="https://via.placeholder.com/100" alt="Imagen 2"></td>
                             <td class="align-middle text-center">Itinerario 2</td>
                             <td class="align-middle text-center">Explora nuevos destinos y experimenta aventuras únicas.</td>
-                            <td class="text-center align-middle"><a href="itinerario.html" class="btn btn-info">Información</a></td>
+                            <td class="text-center align-middle"><button id="botonInformacion" class="btn btn-info">Información</button></td>
                         </tr>
                         <tr>
                             <td class="text-center"><img src="https://via.placeholder.com/100" alt="Imagen 3"></td>
                             <td class="align-middle text-center">Itinerario 3</td>
                             <td class="align-middle text-center">Sumérgete en la cultura local con este itinerario fascinante.</td>
-                            <td class="text-center align-middle"><a href="itinerario.html" class="btn btn-info">Información</a></td>
+                            <td class="text-center align-middle"><button id="botonInformacion" class="btn btn-info">Información</button></td>
                         </tr>
                         <tr>
                             <td class="text-center"><img src="https://via.placeholder.com/100" alt="Imagen 4"></td>
                             <td class="align-middle text-center">Itinerario 4</td>
                             <td class="align-middle text-center">Descansa y relájate en destinos pintorescos con este itinerario tranquilo.</td>
-                            <td class="text-center align-middle"><a href="itinerario.html" class="btn btn-info">Información</a></td>
+                            <td class="text-center align-middle"><button id="botonInformacion" class="btn btn-info">Información</button></td>
                         </tr>
                         <tr>
                             <td class="text-center"><img src="https://via.placeholder.com/100" alt="Imagen 5"></td>
                             <td class="align-middle text-center">Itinerario 5</td>
                             <td class="align-middle text-center">Descubre la historia y la arquitectura en este itinerario educativo.</td>
-                            <td class="text-center align-middle"><a href="itinerario.html" class="btn btn-info">Información</a></td>
+                            <td class="text-center align-middle"><button id="botonInformacion" class="btn btn-info">Información</button></td>
                         </tr>
-                    </tbody>
                 </table>
             </div>
         </div>
@@ -141,6 +142,7 @@
             </div>
         </footer>
     </div>
+    <script src="index.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
