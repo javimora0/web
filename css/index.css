@@ -1,0 +1,24 @@
+@keyframes backgroundAnimation {
+    0% { background-position: 0 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+}
+
+body {
+    animation: backgroundAnimation 5s ease infinite;
+    background: linear-gradient(-45deg, #474646, #62183c, #0f5067, #00674f);
+    background-size: 400% 400%;
+}
+.fade-out {
+    animation: fadeOutAnimation 0.5s ease forwards;
+}
+
+@keyframes fadeOutAnimation {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

@@ -1,6 +1,9 @@
 $(document).ready(function () {
     $('#botonIniciarSesion').on('click', function () {
-        window.location.href = 'main.html';
+        $('.card').addClass('fade-out');
+        setTimeout(function() {
+            window.location.href = 'main.html';
+        }, 500);
     });
 });
 
