@@ -7,10 +7,8 @@
     <title>España Viajera</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/mis-itinerarios.css">
+    <link rel="stylesheet" href="css/perfil.css">
 </head>
 
 <body>
@@ -32,6 +30,7 @@
                             d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z" />
                     </svg>
                 </div>
+            </div>
         </nav>
 
         <div class="container-fluid">
@@ -48,63 +47,40 @@
                             <a class="nav-item nav-link text-light" href="mis-itinerarios.html">Mis itinerarios</a>
                             <a class="nav-item nav-link text-light" href="recomendados.html">Recomendados</a>
                             <a class="nav-item nav-link text-light" href="perfil.html">Mi perfil</a>
-                            <a class="nav-item nav-link text-light" href="crear-itinerario.html">Crear itinerario</a>
-
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
 
-        <div class="row mt-5">
+        <div class="row mt-1">
             <div class="col-md-12 text-center">
-                <h2 class="white">Mis itinerarios</h2>
+                <h2 class="white">Crear un itinerario</h2>
             </div>
         </div>
 
-        <div class="row mt-3">
-            <div class="col-md-12">
-                <table class="table table-dark table-striped">
-                    <thead>
-                        <tr class="text-center">
-                            <th>Imagen</th>
-                            <th>Nombre</th>
-                            <th>Descripción</th>
-                            <th>Información</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="text-center"><img src="https://via.placeholder.com/100" alt="Imagen de un itinerario"></td>
-                            <td class="align-middle text-center">Itinerario 1</td>
-                            <td class="align-middle text-center">Descubre lugares increíbles en este itinerario emocionante.</td>
-                            <td class="text-center align-middle"><button id="botonInformacion" class="btn btn-info">Información</button></td>
-                        </tr>
-                        <tr>
-                            <td class="text-center"><img src="https://via.placeholder.com/100" alt="Imagen de un itinerario"></td>
-                            <td class="align-middle text-center">Itinerario 2</td>
-                            <td class="align-middle text-center">Explora nuevos destinos y experimenta aventuras únicas.</td>
-                            <td class="text-center align-middle"><button id="botonInformacion" class="btn btn-info">Información</button></td>
-                        </tr>
-                        <tr>
-                            <td class="text-center"><img src="https://via.placeholder.com/100" alt="Imagen de un itinerario"></td>
-                            <td class="align-middle text-center">Itinerario 3</td>
-                            <td class="align-middle text-center">Sumérgete en la cultura local con este itinerario fascinante.</td>
-                            <td class="text-center align-middle"><button id="botonInformacion" class="btn btn-info">Información</button></td>
-                        </tr>
-                        <tr>
-                            <td class="text-center"><img src="https://via.placeholder.com/100" alt="Imagen de un itinerario"></td>
-                            <td class="align-middle text-center">Itinerario 4</td>
-                            <td class="align-middle text-center">Descansa y relájate en destinos pintorescos con este itinerario tranquilo.</td>
-                            <td class="text-center align-middle"><button id="botonInformacion" class="btn btn-info">Información</button></td>
-                        </tr>
-                        <tr>
-                            <td class="text-center"><img src="https://via.placeholder.com/100" alt="Imagen de un itinerario"></td>
-                            <td class="align-middle text-center">Itinerario 5</td>
-                            <td class="align-middle text-center">Descubre la historia y la arquitectura en este itinerario educativo.</td>
-                            <td class="text-center align-middle"><button id="botonInformacion" class="btn btn-info">Información</button></td>
-                        </tr>
-                </table>
+        <div class="row mt-3 profile-container">
+            <div class="col-md-4 offset-md-4 text-center">
+                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto de Perfil" class="profile-image mb-3">
+                <form>
+                    <div class="mb-3">
+                        <label for="username" class="form-label text-light">Nombre del itinerario</label>
+                        <input type="text" class="form-control" id="username" value="Viaje Sierra Nevada">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label text-light">Inicio del itinerario</label>
+                        <input type="email" class="form-control" id="email" value="CIFP Virgen de gracia, Puertollano">
+                    </div>
+                    <div class="mb-3">
+                        <label for="location" class="form-label text-light">Estación de autobuses de Granada</label>
+                        <input type="text" class="form-control" id="location" value="Ciudad, País">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label text-light">Primera parada:</label>
+                        <input type="tel" class="form-control" id="phone" value="Estación de Servicio: Berendeles">
+                    </div>
+                    <button type="button" class="btn btn-info">Añadir Parada</button>
+                </form>
             </div>
         </div>
 
@@ -142,7 +118,6 @@
             </div>
         </footer>
     </div>
-    <script src="index.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
