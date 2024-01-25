@@ -10,3 +10,50 @@
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
+.row {
+    margin: 0;
+}
+
+.col-md-6 {
+    padding: 15px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    margin: 5px;
+}
+
+.footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-toggler {
+        margin: 10px auto;
+    }
+
+    .col-md-6 {
+        padding: 10px;
+    }
+}
