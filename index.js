@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    $('#botonInformacion').on('click', function () {
+    $('.botonInformacion').on('click', function () {
         window.location.href = 'itinerario.html';
     });
 });
